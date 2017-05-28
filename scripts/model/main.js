@@ -1,8 +1,8 @@
 'use strict';
 var app = app || {};
-var projects = [];
 
 (function (module){
+var projects = [];
 function Project (projectsObj) {
   this.title = projectsObj.title;
   this.link = projectsObj.link;
