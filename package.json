@@ -7,7 +7,8 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "fs": "0.0.1-security",
-    "pg": "^6.2.2"
+    "pg": "^6.2.2",
+    "express-request-proxy": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
