@@ -1,6 +1,21 @@
 'use strict';
 var projects = [];
 
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
 
 function Project (projectsObj) {
   this.title = projectsObj.title;
@@ -28,8 +43,6 @@ var headerNav = function() {
     $('#' + $(this).data('content')).fadeIn();
   });
 };
-
-headerNav();
 
 const storeData = function (){
   localStorage.setItem('projectData', JSON.stringify(projectData));
