@@ -44,4 +44,7 @@ var headerNav = function() {
   });
 };
 
-headerNav();
+const storeData = function (){
+  localStorage.setItem('projectData', JSON.stringify(projectData));
+}
+storeData();
